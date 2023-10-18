@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic html form</title>
+</head>
+<body>
+    <h1>may i help you </h1>
+    <form>
+        <P>
+            <label for="fname">Name</label>
+            <input type="text" id="fname" name="fname" >
+            <input type="text" id="fname" name="fname" >
+        </P>
+        <P>Link with me</P>
+        <P>
+            <label for="num">Phone</label>
+            <input type="text" id="fname" name="fname">
+        </P>
+        <p>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email">
+        </p>
+        <fieldset>
+            <legend>which taxi do you require?</legend>
+            <p>
+                <input type="radio" id="vehicle" name="taxi" value="Car">
+                <label for="vehicle">Car</label>
+            </p>
+            <p>
+                <input type="radio" id="vehicle" name="taxi" value="Van">
+                <label for="vehicle">Van</label>
+            </p>
+            <p>
+                <input type="radio" id="vehicle" name="taxi" value="Tuk Tuk">
+                <label for="vehicle">Tuk Tuk</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Extras</legend>
+            <p>
+            <input type="checkbox" id="fname" name="seat" value="Baby Seat">
+            <label for="seat">Baby Seat</label>
+            </p>
+            <p>
+                <input type="checkbox" id="access" name="Access" value="Wheelchair Access">
+                <label for="Access">Wheelchair Access</label>
+            </p>
+            <p>
+                <input type="checkbox" id="fname" name="fname" value="Stock Tip">
+                <label for="fname">Stock Tip</label>
+            </p>
+        </fieldset>
+        <p>
+            <label for="date">Pickup Date/Time</label>
+            <input type="datetime-local"  id="time" name="time" value="Pickup date/time">
+        </p>
+        <p>
+            <label for="fname">Pixkup Place</label>
+            <select name="Pickup Place">
+                <option value=""selected="selected">Select One</option>
+                <option value="office">Taxi Office</option>
+                <option value="town hall">Town Hall</option>
+                <option value="taxi stand">Taxi Stand</option>
+            </select>
+        </p>
+        <p>
+            <label for="fname">Dropoff Place</label>
+            <input type="text" id="fname" name="dropoff_place" required list="destinations">
+            <datalist id="destinations">
+                <option value="Airport"></option>
+                <option value="Beach"></option>
+                <option value="Hospital"></option>
+                <option value="Market"></option>
+            </datalist>
+        </p>
+        <p>
+            <label for="fname">Special Instruction</label>
+            <textarea name="welcome message" maxlength="400"></textarea>
+        </p>
+        <p>
+            <button type="submit">Submit Booking</button>
+        </p>
+    </form>
+</body>
+</html>
